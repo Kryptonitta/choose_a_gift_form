@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">¡Ayudame con tu regalo!</h1>
+            <p id="description">Completá el formulario así puedo conocer tus gustos 🎁 </p>
+        </header>
+        <form id="survey-form" autocomplete="off">
+            <!--NOMBRE-->
+            <div class="div form-group">
+                <label id="name-label" for="name">Nombre</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Ingresá tu nombre o apodo"
+                    required>
+            </div>
+
+            <!--EMAIL-->
+            <div class="div form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Ingresá tu email"
+                    required>
+            </div>
+
+            <!--AGE-->
+            <div class="div form-group">
+                <label id="number-label" for="number" required>Edad</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control"
+                    placeholder="¿Qué edad tenés?">
+            </div>
+
+            <!--¿Cuál es tu categoría favorita?-->
+            <div class="div form-group">
+                <p>¿Cuál es tu categoría favorita?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Elegí una categoría</option>
+                    <option value="belleza">Belleza</option>
+                    <option value="tech">Tecnología y gadgets</option>
+                    <option value="cultura">Cultura</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="eco">Eco/sustentable</option>
+                    <option value="other">Me gustan todas!</option>
+                </select>
+            </div>
+
+            <!--¿Qué grupo de emojis te representa más?-->
+            <div class="div form-group">
+                <p>¿Qué grupo de emojis te representa más?</p>
+                <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" />💅💁‍</label>
+                <label><input name="user-recommend" value="maybe" type="radio" class="input-radio" />🧑‍💻</label>
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />🎄🥂</label>
+                <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />🍔🍟</label>
+            </div>
+
+            <!--¿Cuál es el mejor plan para una tarde libre en casa?-->
+            <div class="div form-group">
+                <p>¿Cuál es el mejor plan para una tarde libre en casa?</p>
+                <select id="most-like" name="mostLike" class="form-control" required>
+                    <option disabled selected value>Elegí una opción de la lista</option>
+                    <option value="cocina">Cocinar</option>
+                    <option value="limpieza">Limpiar la casa</option>
+                    <option value="pelicula">Ver una serie o peli</option>
+                    <option value="amigos">Invitar amigos</option>
+                </select>
+            </div>
+
+            <!-- Si fueras una cerveza ¿Cuál serías?-->
+            <div class="div cerv form-group">
+                <p>Si fueras una cerveza ¿Cuál serías? <span class="clue">(Podés seleccionar más de 1!)</span>
+                </p>
+                <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Pilzner
+                    -> no me gusta tomar riesgos...</label>
+                <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Dark
+                    Ale
+                    -> agresiva a primera viste, luego sensible</label>
+                <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />IPA
+                    ->
+                    me gustaría saber que piensan los demás de mi</label>
+                <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Lager ->
+                    dicen que soy amigable</label>
+                <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Brown
+                    Ale -> la más ignorada</label>
+                <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Stout
+                    ->
+                    el buen gusto</label>
+                <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Honey -> una
+                    dulzura, lo sé</label>
+                <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />De
+                    trigo -> siempre con estilo</label>
+            </div>
+
+            <!--¿Qué NO te gusta que te regalen?-->
+            <div class="div form-group">
+                <p>¿Qué NO te gusta que te regalen?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Ingresá acá lo que no aceptarías que te regale 😅..."></textarea>
+            </div>
+            <!-- BOTON ENVIAR -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button"> Enviar 💌 </button>
+            </div>
+
+            <p class="ultimo">¡Espero que te guste el regalo que vas a recibir!</p>
+        </form>
+
+    </div>
+</body>
+
+</html>
